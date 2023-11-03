@@ -49,6 +49,27 @@ li {
 }
 /*--------------------ABOVE IS FOR PHONE CSS ONLY-------------------*/
 
-@media (min-width: 992px){
+@media (min-width: 800px){
+
+    .hidden-on-desktop{
+        display: none;
+    }
+
+    h1{
+        position: relative;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        /*justify-content: flex-end;*/
+        list-style: none;
+        position: absolute;
+        margin: 15px;
+        right: 20px;
+        top: 35px;
+    }
+
+
 
 }
