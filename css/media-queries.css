@@ -1,3 +1,54 @@
 * {
     border: 1px dashed red;
 }
+/* ---------------------------Media query for smaller screens -------------------*/
+@media screen and (max-width: 767px) {
+
+body {
+    font-family: sans-serif;
+}
+
+.alert-info {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(209, 249, 249);
+}
+
+a.no-underline {
+    font-size: small;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.nav-links {
+    padding: 2px;
+}
+
+li {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(204, 204, 204);
+}
+
+    img {
+        width: 100%; /* Adjust image size for smaller screens */
+    }
+}
+/*--------------------ABOVE IS FOR PHONE CSS ONLY-------------------*/
+
+@media (min-width: 992px){
+
+}
