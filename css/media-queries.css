@@ -1,5 +1,5 @@
 * {
-    border: 1px dashed red;
+    border: 1px dashed transparent;
 }
 /* ---------------------------Media query for smaller screens -------------------*/
 @media screen and (max-width: 767px) {
@@ -46,10 +46,22 @@ li {
     img {
         width: 100%; /* Adjust image size for smaller screens */
     }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #social-media-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
 /*--------------------ABOVE IS FOR PHONE CSS ONLY-------------------*/
 
-@media (min-width: 800px){
+@media (min-width: 768px){
 
     .hidden-on-desktop{
         display: none;
@@ -62,14 +74,50 @@ li {
     ul {
         display: flex;
         flex-direction: row;
-        /*justify-content: flex-end;*/
         list-style: none;
         position: absolute;
         margin: 15px;
-        right: 20px;
+        right: -5px;
         top: 35px;
     }
 
+    img {
+        width: 100%; /* Adjust image size for smaller screens */
+    }
 
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .sub-section{
+        font-style: italic;
+    }
+
+    .main, .sub-section {
+        float: left; /* Float the sections left to align them horizontally */
+        box-sizing: border-box; /* Include padding and borders in the width calculation */
+
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .sub-section {
+        width: 40%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #social-media-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
 }
